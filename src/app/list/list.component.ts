@@ -16,7 +16,6 @@ export class ListComponent implements OnInit {
 
   getAll() {
     this.http.get<Array<any>>("https://60c785ddafc88600179f54d0.mockapi.io/forms").subscribe(result => {
-      console.log(result)
       this.items = result
     })
   }
