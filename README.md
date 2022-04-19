@@ -1,10 +1,9 @@
 # Angular Service Workers example
 
 ## Development server with service workers
-Run `npm run watch`.
-Then in a new terminal, start a simple HTTP server with `npx http-server -p 8080 -c-1 dist/ird`. Use `localhost:8080` and not `127.0.0.1` or any other URL to access the app.
+Run `npm run watch`. Use only `localhost:8080` and no other URL to access the app such as `127.0.0.1:8080`.
 
-During development, re-build is automatic, but make sure to refresh **twice** the app to install a new version of your service worker.
+During development, re-build is automatic, but make sure to refresh **twice** the app to install a new version of your service worker. This is because the new service worker is installed after the first refresh, thus both old and new are running simultaneously. The second refresh uninstalls the old service worker.
 
 ## Classic development server
 
