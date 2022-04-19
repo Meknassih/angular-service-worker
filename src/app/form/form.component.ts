@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-  name = "hamza"
-  color = "purple"
+  name = "charles"
+  color = "vert"
   status = {}
 
   constructor(private http: HttpClient) { }
